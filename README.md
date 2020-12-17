@@ -1,4 +1,4 @@
-# Getting Started with AR JS React App
+# Getting Started with AR JS React Viewer App
 
 ### Install node and npm to run this project
 
