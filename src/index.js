@@ -27,7 +27,7 @@ const exportsSettings = {
 };
 
 async function downloadFonts() {
-  await Core.FontStore.registerFonts('/assets/fontsConfig.json');
+  await Core.FontStore.registerFonts('assets/fontsConfig.json');
   console.log('Fonts Registered');
 }
 
@@ -47,20 +47,20 @@ function App() {
   }
   return (
     <Fragment>
-      <div class='container-fluid'>
-        <div class='form-group mb-3 mt-3'>
+      <div className='container-fluid'>
+        <div className='form-group mb-3 mt-3'>
           <div>
             <label>Select available Exports: </label>
           </div>
           {allExports.map((exp) => (
-            <div class='form-check form-check-inline' key={exp.value}>
+            <div className='form-check form-check-inline' key={exp.value}>
               <input
-                class='form-check-input'
+                className='form-check-input'
                 type='checkbox'
                 checked={exp.available}
                 onChange={() => onCheckedChange(exp.value)}
               />
-              <label class='form-check-label'>{exp.label}</label>
+              <label className='form-check-label'>{exp.label}</label>
             </div>
           ))}
         </div>
