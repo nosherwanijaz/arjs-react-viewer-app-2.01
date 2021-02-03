@@ -23,7 +23,7 @@ const exportsSettings = {
     documentAssembly: false,
     pdfVersion: '1.7',
     autoPrint: false,
-    filename: 'ActiveReportsJS-Sample.pdf',
+    filename: 'ActiveReportsJS-Sample',
   },
 };
 
@@ -70,7 +70,7 @@ function App() {
       <div id='viewer-host'>
         <Viewer
           report={{
-            Uri: 'reports/MA_Exchange_Form.rdlx-json',
+            Uri: 'reports/Test.rdlx-json',
           }}
           exportsSettings={exportsSettings}
           availableExports={allExports
