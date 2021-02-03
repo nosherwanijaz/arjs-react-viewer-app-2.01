@@ -7,6 +7,7 @@ import '@grapecity/activereports/pdfexport';
 import '@grapecity/activereports/htmlexport';
 import '@grapecity/activereports/xlsxexport';
 import { Core } from '@grapecity/activereports';
+import {} from './arjs-license';
 
 const exportsSettings = {
   pdf: {
@@ -21,7 +22,7 @@ const exportsSettings = {
     contentAccessibility: false,
     documentAssembly: false,
     pdfVersion: '1.7',
-    autoPrint: true,
+    autoPrint: false,
     filename: 'ActiveReportsJS-Sample.pdf',
   },
 };
@@ -68,7 +69,9 @@ function App() {
 
       <div id='viewer-host'>
         <Viewer
-          report={{ Uri: 'Summons_CourtAppearanceRequired_narrow.rdlx-json' }}
+          report={{
+            Uri: 'reports/MA_Exchange_Form.rdlx-json',
+          }}
           exportsSettings={exportsSettings}
           availableExports={allExports
             .filter((exp) => exp.available)
