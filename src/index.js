@@ -7,7 +7,7 @@ import '@grapecity/activereports/pdfexport';
 import '@grapecity/activereports/htmlexport';
 import '@grapecity/activereports/xlsxexport';
 import { Core } from '@grapecity/activereports';
-import {} from './arjs-license';
+import { } from './arjs-license';
 
 const exportsSettings = {
   pdf: {
@@ -70,7 +70,7 @@ function App() {
       <div id='viewer-host'>
         <Viewer
           report={{
-            Uri: 'reports/ColoradoCrash_Jan2021.rdlx-json',
+            Uri: 'sample report/OffenceNotice_narrow.rdlx-json',
           }}
           exportsSettings={exportsSettings}
           availableExports={allExports
