@@ -70,7 +70,7 @@ function App() {
       <div id='viewer-host'>
         <Viewer
           report={{
-            Uri: 'sample report/OffenceNotice_narrow.rdlx-json',
+            Uri: 'reports/IL Crash/IL Crash Report.rdlx-json',
           }}
           exportsSettings={exportsSettings}
           availableExports={allExports
